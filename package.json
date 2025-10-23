@@ -1,0 +1,18 @@
+{
+  "name": "ta-automation-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:recruiter": "pnpm --filter @app/recruiter-dashboard dev",
+    "dev:admin": "pnpm --filter @app/admin-console dev",
+    "dev:analytics": "pnpm --filter @app/analytics-view dev",
+    "build": "pnpm -w run build",
+    "lint": "pnpm -w run lint",
+    "test": "pnpm -w run test"
+  },
+  "devDependencies": {}
+}

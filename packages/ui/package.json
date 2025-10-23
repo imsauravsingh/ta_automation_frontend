@@ -1,0 +1,9 @@
+{
+  "name": "@ui/components",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "@hooks/shared": "workspace:*"
+  }
+}

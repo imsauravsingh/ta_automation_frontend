@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@hooks/*": ["../hooks/src/*"],
+      "@api/*": ["../api-client/src/*"],
+      "@types/*": ["../types/src/*"],
+      "@utils/*": ["../utils/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

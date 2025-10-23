@@ -1,0 +1,1 @@
+export { maskEmail, maskPhone } from './format';

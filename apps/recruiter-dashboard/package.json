@@ -1,0 +1,32 @@
+{
+  "name": "@app/recruiter-dashboard",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006"
+  },
+  "dependencies": {
+    "next": "14.2.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@tanstack/react-query": "^5.0.0",
+    "axios": "^1.4.0",
+    "zod": "^4.0.0",
+    "zustand": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "@ui/components": "workspace:*",
+    "@hooks/shared": "workspace:*",
+    "@api/client": "workspace:*",
+    "@types/shared": "workspace:*",
+    "@utils/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

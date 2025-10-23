@@ -1,0 +1,19 @@
+flowchart LR
+  subgraph Frontend
+    RD[Recruiter Dashboard]
+    AC[Admin Console]
+    AV[Analytics View]
+  end
+  BackendAPI[Backend API (Gateway)]
+  Governance[Governance Gateway]
+  VoiceAI[Voice AI Vendor]
+  S3[S3 Storage]
+  DB[(Postgres)]
+  RD --> BackendAPI
+  AC --> BackendAPI
+  AV --> BackendAPI
+  BackendAPI --> Governance
+  Governance --> DB
+  BackendAPI --> VoiceAI
+  BackendAPI --> S3
+  DB --> Analytics[BI pipeline]
